@@ -1,0 +1,130 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 128px;
+  min-height: 128px;
+  margin-bottom: var(--m-space);
+}
+
+.thai-qr-logo {
+  height: 40%;
+}
+
+.prompt-pay-logo {
+  height: 32px;
+  margin-bottom: var(--m-space);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--m-space);
+  max-width: 80vw;
+  /* flex: 1; */
+  margin-top: var(--l-space);
+  /* margin-bottom: auto; */
+}
+
+.qrCodeContainer {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  width: 256px;
+  border-radius: 16px;
+  margin: var(--s-space);
+  transition: all 0.15s;
+}
+
+
+.amount-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.amount {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: end;
+  position: relative;
+  width: 100%;
+  max-width: 78vw;
+}
+
+.amount::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.thb {
+  opacity: 0.3;
+}
+
+.info-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: var(--m-space);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex: 1;
+  /* margin-bottom: var(--l-space); */
+  /* margin-bottom: auto; */
+}
+
+.info-container p:first-child {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.input-container:last-child {
+  margin-bottom: var(--m-space);
+}
+
+.input-container label {
+  display: block;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.input-container input {
+  max-width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.company-logo-container {
+  border-top: 1px solid var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 100vw;
+  height: 72px;
+}
+
+.sakongroup-logos {
+  height: 32px;
+}
